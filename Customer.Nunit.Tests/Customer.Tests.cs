@@ -15,6 +15,11 @@ namespace LogicCustomer.NUnit.Tests
 			Customer customer = new Customer("Jeffrey Richter", "+1 (425) 555-0100", 1000000);
 			return customer.ToString(format, formatProvider);
 		}
-
+		[Test]
+		public void ToStrin_ThrowsFormatException()
+		{
+			Customer customer = new Customer("Jeffrey Richter", "+1 (425) 555-0100", 1000000);
+			Assert.Throws<FormatException>(() => customer.ToString("B", null));
+		}
 	}
 }
