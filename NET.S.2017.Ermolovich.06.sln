@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicCustomer", "LogicCustomer\LogicCustomer.csproj", "{A9BE4D16-2B3E-4883-A86C-4F9BD800D75E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customer.NUnit.Tests", "Customer.Nunit.Tests\Customer.Nunit.Tests.csproj", "{F71572C8-A400-4D62-88BC-6E84C2B0435F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9BE4D16-2B3E-4883-A86C-4F9BD800D75E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9BE4D16-2B3E-4883-A86C-4F9BD800D75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9BE4D16-2B3E-4883-A86C-4F9BD800D75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9BE4D16-2B3E-4883-A86C-4F9BD800D75E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71572C8-A400-4D62-88BC-6E84C2B0435F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71572C8-A400-4D62-88BC-6E84C2B0435F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71572C8-A400-4D62-88BC-6E84C2B0435F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71572C8-A400-4D62-88BC-6E84C2B0435F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
