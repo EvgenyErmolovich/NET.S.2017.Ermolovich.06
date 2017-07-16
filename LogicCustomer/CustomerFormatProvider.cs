@@ -4,8 +4,19 @@ namespace LogicCustomer
 {
 	public class CustomerFormatProvider: IFormatProvider, ICustomFormatter
 	{
+		/// <summary>
+		/// Gets the format.
+		/// </summary>
+		/// <returns>The format.</returns>
+		/// <param name="formatType">Format type.</param>
 		public object GetFormat(Type formatType) => formatType == typeof(ICustomFormatter) ? this : null;
-
+		/// <summary>
+		/// Format the specified format, arg and formatProvider.
+		/// </summary>
+		/// <returns>The format.</returns>
+		/// <param name="format">Format.</param>
+		/// <param name="arg">Argument.</param>
+		/// <param name="formatProvider">Format provider.</param>
 		public string Format(string format, object arg, IFormatProvider formatProvider)
 		{
 			Customer customer = arg as Customer;
@@ -32,7 +43,12 @@ namespace LogicCustomer
 					}
 			}
 		}
-
+		/// <summary>
+		/// Handles the other formats.
+		/// </summary>
+		/// <returns>The other formats.</returns>
+		/// <param name="format">Format.</param>
+		/// <param name="arg">Argument.</param>
 		private string HandleOtherFormats(string format, object arg)
 		{
 			if (arg is IFormattable)

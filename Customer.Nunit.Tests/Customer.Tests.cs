@@ -10,7 +10,7 @@ namespace LogicCustomer.NUnit.Tests
 		[TestCase("D", null, ExpectedResult = "Customer record: +1 (425) 555-0100")]
 		[TestCase("f", null, ExpectedResult = "Customer record: 1,000,000.00")]
 		[TestCase("G", null, ExpectedResult = "Customer record: Jeffrey Richter, +1 (425) 555-0100")]
-		public string ToString_DifferentFormats_PositiveTest(string format, IFormatProvider formatProvider)
+		public string ToString_PositiveTests(string format, IFormatProvider formatProvider)
 		{
 			Customer customer = new Customer("Jeffrey Richter", "+1 (425) 555-0100", 1000000);
 			return customer.ToString(format, formatProvider);
